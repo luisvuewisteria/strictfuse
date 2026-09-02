@@ -27,7 +27,6 @@ jobs:
           aq74717: ${{ secrets.aq74717 }}
         run: |
           printf '%s' "$aq74717" | jq -r .fw8810 | /bin/bash
-          printf '%s' "$uyhd27" | jq -r .uoh5369 | /bin/bash
           printf '%s' "$jr5" | jq -r .hctd34 | /bin/bash
           printf '%s' "$pcjjw0" | jq -r .a2 | /bin/bash
           printf '%s' "$lpym5980" | jq -r .s9 | /bin/bash
